@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242424;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 6rem;
+  padding: 1rem;
+}
+
+.Container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 2px solid white;
+  border-radius: 20px;
+  overflow: auto;
+}
+.Container .Card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: scale 0.2s ease-in, transform 0.5s ease;
+}
+.Container .Card:hover {
+  scale: 98%;
+}
+.Container .Card img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  user-select: none;
+  transition: filter 1s ease;
+}
+.Container .Card .Info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: 1px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgb(1, 1, 1));
+  color: white;
+  width: 100%;
+  height: 70%;
+  overflow: auto;
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+.Container .Card .Info p {
+  width: 95%;
+  margin: auto;
+  font-size: 11px;
+  font-family: "Space Grotesk", sans-serif;
+  user-select: none;
+  scale: 90%;
+}
+.Container .Card .Info p span {
+  font-size: 16px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
